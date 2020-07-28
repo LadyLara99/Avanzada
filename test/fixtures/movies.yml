@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  duration: MyString
+  url_image: MyString
+  cine_id: one
+  date_time_movie: 2020-07-27
+
+two:
+  name: MyString
+  duration: MyString
+  url_image: MyString
+  cine_id: two
+  date_time_movie: 2020-07-27

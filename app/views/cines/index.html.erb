@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1>Cines</h1>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Url image</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @cines.each do |cine| %>
+        <tr>
+          <td><%= cine.name %></td>
+          <td><%= cine.phone %></td>
+          <td><img class="card-img-top" style="width: 10rem;" src="<%= cine.url_image %>" alt="Card image cap"></td>
+          <td><%= link_to 'Show', cine %></td>
+          <td><%= link_to 'Edit', edit_cine_path(cine) %></td>
+          <td><%= link_to 'Destroy', cine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+<br>
+
+<%= link_to 'New Cine', new_cine_path %>
+</div>
